@@ -22,10 +22,16 @@ export default function Banner() {
       <h1 className="text-5xl text-gray-200 font-bold text-center">
         Desenvolvedor Front End
       </h1>
+      <p className="px-4 text-center max-w-[800px] text-gray-400">
+        Desenvolvedor Front-end especializado em criar experiências digitais
+        rápidas, escaláveis e com foco em performance. Tenho sólida experiência
+        em grandes projetos, utilizando tecnologias modernas como React.js,
+        Next.js, TypeScript, ContextAPI, Styled Components, Sass e Tailwind CSS.
+      </p>
       <div className="flex gap-4 mt-2">
         <ButtonComponent
           href="#know-more"
-          className="bg-gray-800 hover:bg-gray-700"
+          className="bg-gray-800 hover:bg-gray-700 text-white"
         >
           Conhecer mais
         </ButtonComponent>

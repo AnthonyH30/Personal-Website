@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonComponent from "../button";
 import Link from "next/link";
+import Image from "next/image";
 
 const projectsList = [
   {
@@ -54,14 +55,15 @@ export default function Projects() {
               className="relative group hover:cursor-pointer hover:scale-105 transition-transform duration-300 border-b-4 border-green-500"
             >
               <img src={project.image} className="w-full h-full object-cover" />
-              <div className="absolute top-0 right-0 backdrop-brightness-40 transition-all duration-300 group-hover:hidden flex w-full h-full flex-col items-center justify-center">
+              <div className="absolute top-0 right-0 backdrop-brightness-50 transition-all duration-300 group-hover:hidden flex w-full h-full flex-col items-center justify-center">
                 <h3 className="font-bold text-white">{project.name}</h3>
                 <ul className="flex gap-2 mt-2">
                   {project.technologies.map((tech) => (
                     <li key={tech.name}>
-                      <img
+                      <Image
                         src={tech.image}
-                        className="w-6 h-6"
+                        width={24}
+                        height={24}
                         alt={tech.name}
                       />
                     </li>

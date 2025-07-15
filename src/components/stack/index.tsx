@@ -53,7 +53,10 @@ const techs = [
 
 export default function Stack() {
   return (
-    <section className="bg-[#0D0E11] w-full flex flex-col items-center gap-10 px-4 py-10">
+    <section
+      id="know-more"
+      className="bg-[#0D0E11] w-full flex flex-col items-center gap-10 px-4 py-10"
+    >
       <h2 className="text-4xl font-bold text-gray-200 text-center">
         Tecnologias e ferramentas que domino
       </h2>

@@ -38,7 +38,7 @@ const projectsList = [
 export default function Projects() {
   return (
     <div className="bg-[#16181d] w-full">
-      <div className="max-w-[1200px] mx-auto px-4 pt-8 pb-32 flex flex-col gap-14 items-center">
+      <div className="max-w-[1200px] mx-auto px-4 py-10 flex flex-col gap-14 items-center">
         <div className="flex flex-col gap-1 items-center text-xl text-center">
           <h3 className="text-green-500">Meu trabalho</h3>
           <h2 className="text-4xl font-bold text-gray-200">

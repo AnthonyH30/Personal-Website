@@ -34,11 +34,13 @@ export default function ContactMe() {
       </p>
       <div className="flex flex-col mt-12 gap-4">
         {contactInfo.map((contact) => (
-          <div
+          <Link
+            href={contact.link}
+            target="_blank"
             key={contact.name}
             className="flex w-[320px] items-center justify-between bg-[#292C34] h-16 rounded-md px-6"
           >
-            <Link href={contact.link} className="flex gap-3">
+            <div className="flex gap-3">
               <Image
                 src={contact.icon}
                 width={28}
@@ -46,14 +48,14 @@ export default function ContactMe() {
                 alt={`${contact.name} Logo`}
               />
               <h3 className="text-gray-200">{contact.name}</h3>
-            </Link>
+            </div>
             <Image
               src={"/arrow.svg"}
               width={15}
               height={15}
               alt="seta que sinaliza saída da página ao clicar"
             />
-          </div>
+          </Link>
         ))}
       </div>
     </div>
